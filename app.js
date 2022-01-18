@@ -3,6 +3,8 @@ const app = express();
 const pool = require('./db');
 const jwt = require('jsonwebtoken');
 
+pool.query('CREATE TABLE todo(todo_id SERIAL PRIMARY KEY,description VARCHAR(255))');
+
 let port = process.env.PORT || 3000
 
 app.use(express.json());
