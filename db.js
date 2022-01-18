@@ -4,7 +4,7 @@ const pool = new Pool({
     user: 'postgres',
     password: 'rohit',
     database: 'todo_database',
-    host: 'localhost',
+    host: 'https://app1xapp1.herokuapp.com/',
     port: 5432
 });
 
