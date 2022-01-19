@@ -472,6 +472,10 @@ async function verifyToken(req, res, next) {
     }
 }
 
+app.get('/', (req, res) => {
+    res.send('<h2>Welcome to the API. Please go through the doc at https://github.com/rohitsingh30/heroku/blob/main/help.pdf for details about each API endpoints</h2>');
+})
+
 app.listen(port, () => {
     console.log('Started')
 })
